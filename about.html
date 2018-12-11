@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>关于我们</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="./images/rq_icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/rq_icon.png" type="image/x-icon">
+    <link href="./css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link href="./css/style.css" rel='stylesheet' type='text/css'/>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top m-navbar">
+        <div class="container">
+            <!--响应式导航条组成部分1：头部-->
+            <div class="navbar-header">
+                <!--品牌商标-->
+                <a class="navbar-brand" href="#">
+                    <!--<img src="__PUBLIC__/Home/images/logo1.png" alt="logo"/>-->
+                    <span>重庆荣庆科技有限公司</span>
+                </a>
+                <!--折叠菜单的切换按钮（汉堡包按钮）-->
+                <a data-toggle="collapse" href="#navbar-collapse" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!--<label style="margin-top: 15px;">重庆荣庆科技有限公司</label>-->
+                <!--<font><label>重庆荣庆科技有限公司</label></font>-->
+            </div>
+            <!--响应式导航条组成部分2：折叠部分-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li><a href="case1.html"><span class="glyphicon glyphicon-list-alt"></span> 产品中心</a></li>
+                    <li class="active"><a href="about.html"><span class="glyphicon glyphicon-folder-open"></span> 关于我们</a></li>
+                    <li><a href="information.html"><span class="glyphicon glyphicon-question-sign"></span> 加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <img src="./images/about.jpg" class=""/>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row a-content">
+                <div class="col-md-5">
+                    <h4 class="a-h4">关于荣庆</h4>
+                    <p class="a-p">重庆荣庆科技有限公司成立于2015年，是一家专业从事增值电信业务的高新技术企业，服务客户已逾10万家。自成立以来凭借雄厚的实力与中国移动、中国联通、中国电信三大运营商的战略合作伙伴。以强大的短信营销平台业务范围涵盖增值电信服务、电子商务信息化解决方案、移动应用、金融行业移动信息化行业解决方案等。</p>
+                </div>
+                <div class="col-md-1 hidden-xs hidden-sm" style="border-right: 1px solid #944343;height: 300px"></div>
+                <div class="col-md-6">
+                    <div class="a-photo hidden-xs hidden-sm"></div>
+                </div>
+            </div>
+            <div class="row a-content">
+                <div class="col-md-6 col-xs-12" style="min-height: 300px;overflow: hidden">
+                    <div class="a-position" id="container">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 hidden-xs hidden-sm">
+                    <h4>地址</h4>
+                    <p class="tab">重庆永川俊豪中央大街3幢</p>
+                    <h4>联系电话</h4>
+                    <p class="tab">023-49663735</p>
+                    <h4>邮编</h4>
+                    <p class="tab">402160</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix visible-xs"></div>
+    <div class="content_middle_bottom" ></div>
+    <div class="footer">
+        <div class="copy">
+            <div></div>
+            <div class="footer-left">
+                <p><h3>联系方式： 023-49663735</h3></p>
+                <p>工作时间：09:00-18:00</p>
+                <p>地址：重庆永川俊豪中央大街3幢</p>
+                <p>邮编：402160</p>
+            </div>
+            <div class="footer-right">
+                <p>Copyright © 2012-2016 荣庆科技有限公司. All Rights Reserved. </p>
+                <p><a href="http://www.miitbeian.gov.cn" style="text-decoration: none;color: #4e4d4d">渝ICP备17009577号-1</a> </p>
+            </div>
+        </div>
+    </div>
+    <script src="http://webapi.amap.com/maps?v=1.4.4&key=5a35362c100f49a2b90dad0773b4d35a&callback=init"></script>
+    <script>
+        function init(){
+            var map = new AMap.Map('container', {
+                resizeEnable: true,
+                center: [105.8965150000,29.3486100000],
+                zoom: 13
+            });
+            var marker = new AMap.Marker({
+                position: map.getCenter()
+            });
+            marker.setMap(map);
+            // 设置鼠标划过点标记显示的文字提示
+            marker.setTitle('俊豪中央大街3幢');
+
+            // 设置label标签
+            marker.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+                offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+                content: "俊豪中央大街3幢"
+            });
+        }
+    </script>
+</body>
+</html>

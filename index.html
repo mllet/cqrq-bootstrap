@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>荣庆科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="./images/rq_icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/rq_icon.png" type="image/x-icon">
+    <link href="./css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link href="./css/style.css" rel='stylesheet' type='text/css'/>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+        content = "欢迎来到重庆荣庆科技有限公司";
+        cons="We have a convenient, fast and real-time view data background, powerful data statistics let you to be a key"
+        i = 0,j=0;
+        setTimeout("show()",500);
+        function show(){
+            str  = content.substr(0,i);
+            $("#txt").text(str) ;
+            if (i<content.length){
+                i++;
+                setTimeout("show()",100);
+            }
+        }
+        setTimeout("shows()",500);
+        function shows() {
+            strs1  = cons.substr(0,j);
+            $("#strs").text(strs1) ;
+            if (j<cons.length){
+                j++;
+                setTimeout("shows()",40);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top m-navbar">
+    <div class="container">
+        <!--响应式导航条组成部分1：头部-->
+        <div class="navbar-header">
+            <!--品牌商标-->
+            <a class="navbar-brand" href="#">
+                <!--<img src="./images/logo1.png" alt="logo"/>-->
+                <span>重庆荣庆科技有限公司</span>
+            </a>
+            <!--折叠菜单的切换按钮（汉堡包按钮）-->
+            <a data-toggle="collapse" href="#navbar-collapse" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <!--<label style="margin-top: 15px;">重庆荣庆科技有限公司</label>-->
+            <!--<font><label>重庆荣庆科技有限公司</label></font>-->
+        </div>
+        <!--响应式导航条组成部分2：折叠部分-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="case1.html"><span class="glyphicon glyphicon-list-alt"></span> 产品中心</a></li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-folder-open"></span> 关于我们</a></li>
+                <li><a href="information.html"><span class="glyphicon glyphicon-question-sign"></span> 加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <h1></h1>
+        <h2 id="txt"></h2>
+        <p id="strs"></p>
+        <div class="header_arrow">
+            <p style="color:#1296DB;">了解更多</p>
+            <a href="#arrow" class="scroll"><span></span></a>
+        </div>
+    </div>
+</div>
+
+<div class="content_middle_bottom bg" id="arrow">
+    <div class="container">
+        <div class="bg bg_h">
+            <h3 class="tz-title-3">What We Do</h3>
+            <h4>Development of short message platform, can be directly according to the internal HTTP in the browser login
+                link way, quick and easy. Web platform - mass send - send the query - regularly send Settings</h4>
+        </div>
+        <div class="grid_2 text-center">
+            <div class="col-md-4 box_1">
+                <span class="top-icon1"> </span>
+                <h3>公司简介</h3>
+                <p>重庆荣庆科技有限公司，成立于2015年，是一家专业从事增值电信业务的高新技术企业，服务客户已逾10万家。自成立以来，凭借雄厚的实力与中国移动、中国联通、中国电信三大运营商的战略合作伙伴。以强大的短信营销平台业务范围涵盖增值电信服务、电子商务信息化解决方案、移动应用、金融行业移动信息化行业解决方案等。</p>
+            </div>
+            <div class="col-md-4 box_1">
+                <span class="top-icon2"> </span>
+                <h3>企业文化</h3>
+                <p>以“创新、和谐、迅速、准确”为企业的核心价值观与“为群众提供及时、有效的信息服务，让合作伙伴充分受益，让员工实现人生梦想，让社会得到极大回馈”为企业的使命，致力于打造一流的互联网服务公司。经过多年的探索和总结，我公司形成了独具特色的企业文化模式，为公司的做大做强和长远发展提供了有力的保证和坚强的后盾</p>
+            </div>
+            <div class="col-md-4 box_1">
+                <span class="top-icon3"> </span>
+                <h3>短信平台</h3>
+                <p>面开发的短信平台，可直接根据内部http链接方式在浏览器中登录，快速便捷。网页平台——大批量发送——发送情况查询——定时发送设置</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_middle_bottom" >
+    <div class="container">
+        <div class="bg2 bg_h">
+            <h3 class="tz-title-3">我们的能力</h3>
+            <h4>高质量转换代码，强大的团队力量，完美的管理方案，让您的企业实现质的腾飞！</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 hidden-xs"><img src="./images/m_bg.jpg" alt="" class="img-circle" ></div>
+            <div class="col-sm-4 index-lf">
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;开发</h4>
+                <p class="tab">自有的脚本引擎,快速开发</p>
+
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;服务</h4>
+                <p class="tab">自建的服务器模组，服务上亿用户</p>
+
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;数据</h4>
+                <p class="tab">完善的数据运营后台及实时数据</p>
+            </div>
+            <div class="col-sm-4 index-lf">
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;代码</h4>
+                <p class="tab">高质量的转换代码</p>
+
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;业务模式</h4>
+                <p class="tab">新型的业务模式及场景</p>
+
+                <h4><i class="iconfont icon-kaifa"></i>&nbsp;&nbsp;团队</h4>
+                <p class="tab">强大的团队力量，完美的管理方案</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_middle_bottom" >
+    <div class="container">
+        <div class="bg_h">
+            <h3 class="tz-title-3">合作伙伴</h3>
+        </div>
+        <div class="row ">
+            <!--<div class="col-lg-6 col-md-6 col-md-4 col-xs-6">-->
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case4.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case5.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case6.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case7.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case8.jpg" alt="">
+                </div>
+            </div>
+            <!--</div>-->
+            <!--<div class="col-lg-6 col-md-6 col-md-4 col-xs-6">-->
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case9.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case10.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case11.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-md-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="./images/case12.jpg" alt="">
+                </div>
+            </div>
+
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="content_middle_bottom" ></div>
+<div class="footer">
+    <div class="copy">
+        <div></div>
+        <div class="footer-left">
+            <p><h3>联系方式： 023-49663735</h3></p>
+            <p>工作时间：09:00-18:00</p>
+            <p>地址：重庆永川俊豪中央大街3幢</p>
+            <p>邮编：402160</p>
+        </div>
+        <div class="footer-right">
+            <p>Copyright © 2012-2016 荣庆科技有限公司. All Rights Reserved. </p>
+            <p><a href="http://www.miitbeian.gov.cn" style="text-decoration: none;color: #4e4d4d">渝ICP备17009577号-1</a> </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
